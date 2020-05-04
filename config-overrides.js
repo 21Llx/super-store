@@ -1,12 +1,10 @@
 const { override, addLessLoader, fixBabelImports,addDecoratorsLegacy } = require('customize-cra')
-const modifyVars = require('./theme')
 module.exports = override(
   addLessLoader({
-    javascriptEnabled: true,
-    modifyVars
+    javascriptEnabled: true
   }),
   fixBabelImports('import', {
-    libraryName: 'antd',
+    libraryName: 'antd-mobile',
     libraryDirectory: 'es',
     style: true,
   }),

@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default class Dashboard extends React.Component{
+export default class Order extends React.Component{
   constructor(props){
     super(props)
     this.state={
@@ -11,7 +11,7 @@ export default class Dashboard extends React.Component{
   render(){
     return(
       <div>
-        Dashboard
+        Order
       </div>
     )
   }

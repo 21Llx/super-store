@@ -1,42 +1,10 @@
-import Loadable from 'react-loadable'
-
-import {Loading} from '../components'
-
-const Dashboard = Loadable({
-  loader: ()=>import('./Dashboard'),
-  loading: Loading
-})
-
-const Login = Loadable({
-  loader: ()=>import('./Login'),
-  loading: Loading
-})
-
-const NotFound = Loadable({
-  loader: ()=>import('./NotFound'),
-  loading: Loading
-})
-
-const Setting = Loadable({
-  loader: ()=>import('./Setting'),
-  loading: Loading
-})
-
-const ArticleList = Loadable({
-  loader: ()=>import('./Article'),
-  loading: Loading
-})
-
-const ArticleEdit = Loadable({
-  loader: ()=>import('./Article/eidt'),
-  loading: Loading
-})
-
-export {
-  Dashboard,
-  Login,
-  NotFound,
-  Setting,
-  ArticleList,
-  ArticleEdit
-}
+export {default as Cart} from './Cart'
+export {default as Category} from './Category'
+export {default as Collect} from './Collect'
+export {default as Goods_detail} from './Goods_detail'
+export {default as Goods_list} from './Goods_list'
+export {default as Home} from './Home'
+export {default as NotFound} from './NotFound'
+export {default as Order} from './Order'
+export {default as Search} from './Search'
+export {default as User} from './User'

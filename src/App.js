@@ -1,31 +1,38 @@
 import React from 'react';
-import { Route, Switch,Redirect } from 'react-router-dom'
+import {Route, Switch, Redirect} from 'react-router-dom'
 
-import { adminRouter } from './routes'
+import routes from './routes'
 
-class App extends React.Component {
-  render() {
-    return (
-      <div>
-        <h2>这是公共</h2>
+export default class App extends React.Component{
+  constructor(props){
+    super(props)
+    this.state={
+
+    }
+  }
+
+  render(){
+    return(
+      <>
         <Switch>
           {
-            adminRouter.map((route) => {
-              return <Route
-                key={route.pathname}
-                path={route.pathname}
-                exact = {route.exact}
-                render={(routeProps) => {
-                  return <route.component {...routeProps} />
-                }} />
+            routes.map(route=>{
+              return(
+                <Route 
+                  key={route.pathname}
+                  path={route.pathname} 
+                  exact
+                  render={res=>{
+                    return(<route.component {...res}/>)
+                  }}
+                  />
+              )
             })
           }
-          <Redirect to={adminRouter[0].pathname} from="/admin" exact />
-          <Redirect to="/404" />
+          <Redirect to='/home' from='/' exact></Redirect>
+          <Redirect to='/404' ></Redirect>
         </Switch>
-      </div>
+      </>
     )
   }
 }
-
-export default App

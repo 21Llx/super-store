@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default class Login extends React.Component{
+export default class Goods_detail extends React.Component{
   constructor(props){
     super(props)
     this.state={
@@ -11,7 +11,7 @@ export default class Login extends React.Component{
   render(){
     return(
       <div>
-        登录页
+        goods_detail
       </div>
     )
   }

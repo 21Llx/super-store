@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default class Loading extends React.Component{
+export default class Category extends React.Component{
   constructor(props){
     super(props)
     this.state={
@@ -11,7 +11,7 @@ export default class Loading extends React.Component{
   render(){
     return(
       <div>
-        Loading....
+        Category
       </div>
     )
   }

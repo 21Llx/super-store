@@ -1,40 +1,61 @@
 import {
-  Dashboard,
-  Login,
-  NotFound,
-  Setting,
-  ArticleList,
-  ArticleEdit
+  Cart, 
+  Category, 
+  Collect, 
+  Goods_detail, 
+  Goods_list, 
+  Home, 
+  NotFound, 
+  Order,
+  Search,
+  User
 } from '../views'
 
-export const mainRouter = [
+const routes = [
   {
-    pathname: '/login',
-    component: Login
+    pathname: '/cart',
+    component: Cart,
+  },
+  {
+    pathname: '/category',
+    component: Category,
+  },
+  {
+    pathname: '/collect',
+    component: Collect,
+  },
+  {
+    pathname: '/category',
+    component: Category,
+  },
+  {
+    pathname: '/detail',
+    component: Goods_detail,
+  },
+  {
+    pathname: '/list',
+    component: Goods_list,
+  },
+  {
+    pathname: '/home',
+    component: Home,
   },
   {
     pathname: '/404',
-    component: NotFound
-  }
+    component: NotFound,
+  },
+  {
+    pathname: '/order',
+    component: Order,
+  },
+  {
+    pathname: '/search',
+    component: Search,
+  },
+  {
+    pathname: '/user',
+    component: User,
+  },
 ]
 
-export const adminRouter = [
-  {
-    pathname: '/admin/dashboard',
-    component: Dashboard
-  },
-  {
-    pathname: '/admin/setting',
-    component: Setting
-  },
-  {
-    pathname: '/admin/article',
-    component: ArticleList,
-    exact: true
-  },
-  {
-    pathname: '/admin/article/edit/:id',
-    component: ArticleEdit
-
-  }
-]
+export default routes

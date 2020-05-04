@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default class Edit extends React.Component{
+export default class Good_list extends React.Component{
   constructor(props){
     super(props)
     this.state={
@@ -11,7 +11,7 @@ export default class Edit extends React.Component{
   render(){
     return(
       <div>
-        文章编辑
+        Good_list
       </div>
     )
   }

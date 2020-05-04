@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default class Setting extends React.Component{
+export default class Search extends React.Component{
   constructor(props){
     super(props)
     this.state={
@@ -11,7 +11,7 @@ export default class Setting extends React.Component{
   render(){
     return(
       <div>
-        Setting
+        Search
       </div>
     )
   }
