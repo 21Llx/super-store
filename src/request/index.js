@@ -22,6 +22,16 @@ ajax.interceptors.response.use(resp=>{
 })
 
 //获得轮播图
-export const getArticle = ()=>{
+export const getSwiperData = ()=>{
   return ajax.get('home/swiperdata')
+}
+
+//获得导航图
+export const getCatitems = ()=>{
+  return ajax.get('home/catitems')
+}
+
+// 获得分类的全部数据
+export const getCategory = ()=>{
+  return ajax.get('categories')
 }

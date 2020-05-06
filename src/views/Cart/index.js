@@ -1,5 +1,5 @@
 import React from 'react';
-
+import {Tabbar} from '../../components'
 export default class Cart extends React.Component{
   constructor(props){
     super(props)
@@ -11,7 +11,7 @@ export default class Cart extends React.Component{
   render(){
     return(
       <div>
-        cart
+        <Tabbar pathname={this.props.location.pathname}/>
       </div>
     )
   }
