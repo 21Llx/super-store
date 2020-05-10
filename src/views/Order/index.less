@@ -1,0 +1,42 @@
+.order{
+  .order_content{
+    height: 540px;
+    background-color: #fff;
+    .goods{
+      height:150px;
+      border: 1px solid #ccc;
+      display: flex;
+      img{
+        flex: 1;
+        height: 100%;
+      }
+      .good{
+        flex: 2;
+        display: flex;
+        margin-left: 20px;
+        flex-direction: column;
+        .good_name{
+          font-size: 14px;
+        }
+        .good_price{
+          color: #eb4450;
+          font-size: 20px;
+        }
+      }
+      .total{
+        font-size: 20px;
+        position: relative;
+        top: 110px;
+        right: 20px;
+      }
+    }
+  }
+  .noContent{
+    height: 490px;
+    box-sizing: border-box;
+    font-size: 30px;
+    color: #eb4450;
+    text-align: center;
+    padding-top: 150px;
+  }
+}

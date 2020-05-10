@@ -34,9 +34,9 @@ export default class Tabbar extends React.Component {
           <img src={this.props.pathname==='/cart'? cartA : cart} alt=""/>
           <p className={this.props.pathname==='/cart'? 'pActive' : ''}>购物车</p>
         </Link>
-        <Link className="linktitle" to='/user'>
-          <img src={this.props.pathname==='/user'? myA : my} alt=""/>
-          <p className={this.props.pathname==='/user'? 'pActive' : ''}>我的</p>
+        <Link className="linktitle" to='/order'>
+          <img src={this.props.pathname==='/order'? myA : my} alt=""/>
+          <p className={this.props.pathname==='/order'? 'pActive' : ''}>订单</p>
         </Link>
       </div>
     )

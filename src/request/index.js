@@ -35,3 +35,18 @@ export const getCatitems = ()=>{
 export const getCategory = ()=>{
   return ajax.get('categories')
 }
+
+// 获得商品列表
+export const getGoodsList = (cid)=>{
+  return ajax.get(`goods/search?cid=${cid}`)
+}
+
+// 获得商品详情
+export const getGoodsDetail = (id)=>{
+  return ajax.get(`goods/detail?goods_id=${id}`)
+}
+
+// 商品搜索
+export const searchGoods = (value)=>{
+  return ajax.get(`goods/qsearch?query=${value}`)
+}

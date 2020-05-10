@@ -33,7 +33,7 @@ const routes = [
     component: Goods_detail,
   },
   {
-    pathname: '/list',
+    pathname: '/list/:id',
     component: Goods_list,
   },
   {

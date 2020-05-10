@@ -1,21 +1,29 @@
 import React from 'react';
-import {Link} from 'react-router-dom'
-
+import { Link } from 'react-router-dom'
 import './index.less'
 
-export default class SearchInput extends React.Component{
-  constructor(props){
+export default class SearchInput extends React.Component {
+  constructor(props) {
     super(props)
-    this.state={
+    this.state = {
 
     }
   }
-
-  render(){
-    return(
+  goBack=()=>{
+    this.props.history.goBack()
+  }
+  render() {
+    return (
       <div className="search_input">
-        <p className='title'>超级商城</p>
-        <Link to='/search' className="text">搜索</Link>
+        {
+          this.props.back ?
+            <div onClick={this.goBack} className="back">&lt; </div>
+            : ''
+        }
+        <div className="search">
+          <p className='title'>{this.props.name}</p>
+          <Link to='/search' className="text">搜索</Link>
+        </div>
       </div>
     )
   }

@@ -46,8 +46,9 @@ export default class Home extends React.Component {
     return (
       <div className='home'>
         {/* 头部 */}
-        <SearchInput></SearchInput>
+        <SearchInput name="超级商城" />
         {/* 轮播 */}
+        <div className="content">
         <div className="swiper-container">
           <div className="swiper-wrapper">
             {
@@ -76,8 +77,8 @@ export default class Home extends React.Component {
         <div className="floor">
           <img className='floor_title' src='https://api-hmugo-web.itheima.net/pyg/pic_floor01_title.png' alt="" />
           <div className='floor_img'>
-            <div>
-              <img className="big_img" src="https://api-hmugo-web.itheima.net/pyg/pic_floor01_1@2x.png" alt="" />
+            <div className="big_img">
+              <img src="https://api-hmugo-web.itheima.net/pyg/pic_floor01_1@2x.png" alt="" />
             </div>
             <div className="small_img">
               <img src="https://api-hmugo-web.itheima.net/pyg/pic_floor01_2@2x.png" alt="" />
@@ -86,6 +87,7 @@ export default class Home extends React.Component {
               <img src="https://api-hmugo-web.itheima.net/pyg/pic_floor01_5@2x.png" alt="" />
             </div>
           </div>
+        </div>
         </div>
         {/* tabbar */}
         <Tabbar pathname={this.props.location.pathname}/>

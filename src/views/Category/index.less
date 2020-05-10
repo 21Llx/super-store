@@ -4,7 +4,7 @@
   margin: 10px auto;
   display: flex;
   .main_left{
-    flex:1;
+    width: 33%;
     background-color: #F4F4F4;
     margin-right: 5px;
     overflow: hidden;
@@ -19,7 +19,26 @@
     }
   }
   .main_right{
-    flex: 3;
-    background-color: pink;
+    width: 66%;
+    background-color: #fff;
+    overflow: auto;
+    .main_right_title{
+      text-align: center;
+      color: #ccc;
+    }
+    .cats{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      .cat{ 
+        width: 30%;
+        img{
+          width: 100%;
+        }
+        p{
+          text-align: center;
+        }
+      }
+    }
   }
 }
